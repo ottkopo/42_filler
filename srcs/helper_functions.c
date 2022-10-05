@@ -12,6 +12,7 @@
 
 #include "../includes/filler.h"
 
+/*print the final coordinates*/
 int	print_final_coords(int y, int x)
 {
 	ft_putnbr(y);
@@ -21,6 +22,8 @@ int	print_final_coords(int y, int x)
 	return (1);
 }
 
+/*function for creating the initial empty map, converting the input into a matrix, where empty cells are represented
+by 0, player 1 pieces are represented by -1 and player 2 pieces are represented by -2*/
 int	check_cell(char c, t_filler *f, int x, int y)
 {
 	if (c == '.')
