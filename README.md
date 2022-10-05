@@ -27,7 +27,9 @@ _NOTE: Everything in the 'recources' folder is provided by the school Hive Helsi
 
 
 **My approach and the algorithm**
+
 I took a heatmap approach to this project, where I would create a 2D matrix of the map, and fill every cell of the map with a value determining how far the given cell is from the opponents piece. Then I would just check every valid placement for the given piece and save the one with the lowest sum of covered cells in that placement. This approach proved quite strong against the given opponents, since they are actually quite weak players, but I did also have quite a bit of success playing against other algorithms created by other students of Hive Helsinki.
 
 **Visualizer**
+
 The visualizer was a bonus for this project, so I was not required to make one to pass this project. However I had never used python so I took it as a learning opportunity to learn the basics of a new language. The Visualizer could definitely be improved, but I also didn't want to spend too much time on it because I need to also advance in my studies. I am however quite happy that I decided to make a visualizer for this project since it makes it much easier to see how the algorithms fight compared to the terminal input. 
