@@ -1,0 +1,1 @@
+./run_game.sh | python3 ../visualizer/visualizer.py
