@@ -12,6 +12,7 @@
 
 #include "../includes/filler.h"
 
+/*function to check that a cell is not outside the map*/
 int	is_inside(t_filler *f, int x, int y)
 {
 	if (y < 0)
@@ -25,6 +26,7 @@ int	is_inside(t_filler *f, int x, int y)
 	return (1);
 }
 
+/*check if there are no more empty cells in the map*/
 int	board_has_empty_cells(t_filler *f)
 {
 	int	x;
@@ -46,6 +48,7 @@ int	board_has_empty_cells(t_filler *f)
 	return (0);
 }
 
+/*function to fill empty cells around found value*/
 int	fill_empty_cells(t_filler *f, int x, int y, int len)
 {
 	int	i;
@@ -75,6 +78,8 @@ int	fill_empty_cells(t_filler *f, int x, int y, int len)
 	return (filled);
 }
 
+/*insert heat values to the map by parsing through the map looking for a certain value and filling all empty cells around that value
+with a value that is 1 higher than the current value*/
 int	heatmap_is_finished(t_filler *f, int curr, int len)
 {
 	int	x;
@@ -100,6 +105,7 @@ int	heatmap_is_finished(t_filler *f, int curr, int len)
 	return (0);
 }
 
+/*read empty map and add heatmap values to empty cells*/
 void	create_heatmap(t_filler *f)
 {
 	int	x;
