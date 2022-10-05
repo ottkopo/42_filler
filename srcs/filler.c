@@ -12,6 +12,7 @@
 
 #include "../includes/filler.h"
 
+/*function to read the input and determine the size of the map*/
 void	determine_map_size(t_filler *f, char *gnl_ret)
 {
 	int		i;
@@ -36,6 +37,7 @@ void	determine_map_size(t_filler *f, char *gnl_ret)
 	free (gnl_ret);
 }
 
+/*create empty map without heatmap values*/
 void	create_map(t_filler *f, int x, int y, int i)
 {
 	char	*gnl_ret;
@@ -64,6 +66,7 @@ void	create_map(t_filler *f, int x, int y, int i)
 	}
 }
 
+/*function to determine the size of the piece from input*/
 void	determine_piece_size(t_filler *f)
 {
 	char	*gnl_ret;
@@ -91,6 +94,7 @@ void	determine_piece_size(t_filler *f)
 	free (gnl_ret);
 }
 
+/*function to read the input and get the piece*/
 void	get_piece(t_filler *f)
 {
 	char	*gnl_ret;
@@ -119,6 +123,7 @@ void	get_piece(t_filler *f)
 	}
 }
 
+/*main function to run the game and determine player numbers*/
 int	main(void)
 {
 	t_filler	f;
