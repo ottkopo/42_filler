@@ -131,7 +131,7 @@ void	free_struct(t_filler *f)
 }
 
 /*function to determine the best placement for current piece by parsing through every cell and saving the "sum" of every valid placement
-and saving the coordinates for evvery placement that is better than the current best"
+and saving the coordinates for evvery placement that is better than the current best*/
 int	place_piece(t_filler *f)
 {
 	int	x;
