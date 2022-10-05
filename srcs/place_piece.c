@@ -12,6 +12,7 @@
 
 #include "../includes/filler.h"
 
+/*check that the current placement is touching only one of my currently placed pieces*/
 int	only_one_touching(t_filler *f, int x, int y)
 {
 	int	i;
@@ -39,7 +40,8 @@ int	only_one_touching(t_filler *f, int x, int y)
 		return (0);
 	return (1);
 }
-
+/*checking if the placement to given coordinates is valid by making sure that the piece is not going over any pieces currently
+on the board or it is not being placed outside of the map. Also checking that the current placement is connected to my own pieces*/
 int	is_valid(t_filler *f, int x, int y)
 {
 	int	i;
@@ -69,6 +71,8 @@ int	is_valid(t_filler *f, int x, int y)
 	return (only_one_touching(f, x, y));
 }
 
+/*check the sum of a valid placement. Lower sum is better. Sum is counted by adding up every value from the heatmap that
+the current block would cover in this certain placement*/
 int	check_sum(t_filler *f, int x, int y)
 {
 	int	i;
@@ -97,6 +101,7 @@ int	check_sum(t_filler *f, int x, int y)
 	return (sum);
 }
 
+/*function to free the struct at the end of the program*/
 void	free_struct(t_filler *f)
 {
 	int	j;
@@ -125,6 +130,8 @@ void	free_struct(t_filler *f)
 	f->final_y = 0;
 }
 
+/*function to determine the best placement for current piece by parsing through every cell and saving the "sum" of every valid placement
+and saving the coordinates for evvery placement that is better than the current best"
 int	place_piece(t_filler *f)
 {
 	int	x;
