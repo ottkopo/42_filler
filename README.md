@@ -10,7 +10,7 @@ _NOTE: Everything in the 'recources' folder is provided by the school Hive Helsi
 2. Use the command 'make' in the root of the repository to create executable for okoponen.filler
 3. Go to 'tests' folder
 4. Run the command './run_game.sh' to run the game in the terminal.
-4.5. You can also modify the 'run_game.sh' file. You can change the opposing player from carli.filler to any player located in the resources/players folder. There are also 3 maps of different sizes provided in the resources/maps folder.
+5. You can also modify the 'run_game.sh' file. You can change the opposing player from carli.filler to any player located in the resources/players folder. There are also 3 maps of different sizes provided in the resources/maps folder.
 
 **How to run with visualizer:**
 1. Clone the repository
@@ -26,9 +26,12 @@ _NOTE: Everything in the 'recources' folder is provided by the school Hive Helsi
 7. Visualizer will print different info in the terminal while the game is running, such as which player is which color, and the points for each player once the game has finished.
 
 
+
 **My approach and the algorithm**
 
 I took a heatmap approach to this project, where I would create a 2D matrix of the map, and fill every cell of the map with a value determining how far the given cell is from the opponents piece. Then I would just check every valid placement for the given piece and save the one with the lowest sum of covered cells in that placement. This approach proved quite strong against the given opponents, since they are actually quite weak players, but I did also have quite a bit of success playing against other algorithms created by other students of Hive Helsinki.
+
+
 
 **Visualizer**
 
