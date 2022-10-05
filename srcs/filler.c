@@ -37,7 +37,7 @@ void	determine_map_size(t_filler *f, char *gnl_ret)
 	free (gnl_ret);
 }
 
-/*create empty map without heatmap values*/
+/*create empty map without heatmap values where a 0 will represent empty cells, -1 will represent player 1 and -2 will represent player 2*/
 void	create_map(t_filler *f, int x, int y, int i)
 {
 	char	*gnl_ret;
