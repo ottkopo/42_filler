@@ -1,6 +1,8 @@
 # 42_filler
 Hive Helsinki project Filler with visualizer made with Pygame
 
+<img width="794" alt="image" src="https://user-images.githubusercontent.com/58331418/201924107-b1c50e21-1bbc-4643-909a-ad50bd7d7bc2.png">
+
 Filler is a project where 2 players take turns placing randomly generated pieces on the board with the goal of placing as many pieces as possible. Failing to place a piece on your turn will end the game for you, and you will have to wait until the opponent is also unable to place a piece for the game to be finished. Succesfully placing a piece will give 1 point no matter the size of the piece. The goal of this project was to _create an algorithm to play the game against pre-created players using the given virtual machine to run the game_, not to create a program to run this game.
 
 _NOTE: Everything in the 'recources' folder is provided by the school Hive Helsinki, and is **NOT** code written by me. It is only used in this project for testing my own program against other programs designed to play the same game._
